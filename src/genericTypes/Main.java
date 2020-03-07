@@ -1,17 +1,25 @@
 package genericTypes;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
-        /*
-        ArrayList a = new ArrayList();
-        a.add(new String("test"));
-        a.add(new Integer(7));
+        ArrayList<String> a = new ArrayList();
+//        ArrayList<Integer> a = new ArrayList();
 
-        for (int i = 0; i < a.size(); i++) {
-            System.out.println(a.get(i));
+        a.add(new String("test"));
+        //a.add(new Integer(7));
+
+//        for (int i = 0; i < a.size(); i++) {
+//            System.out.println(a.get(i));
+//        }
+
+        for (String s : a
+        ) {
+            System.out.println(s);
+
         }
-        */
 
         AnotherClass<String> somethingName = new AnotherClass<>();
         somethingName.setVal("test2");
