@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class SuperClass {
-    public static void test(List<?> list) {
+    public static void test(List<? extends SuperClass> list) {
 
     }
 }
@@ -22,7 +22,7 @@ public class Main {
         listOfClass.add(new SuperClass());
         listOfClass.add(new SubClass());
 
-        SuperClass.test(listOfStrings);
+        //SuperClass.test(listOfStrings);
         SuperClass.test(listOfClass);
 
         //wrong example:
