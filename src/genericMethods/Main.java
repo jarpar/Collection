@@ -28,7 +28,11 @@ class Editor {
             System.out.println(f.getName());
         }
 
-        list.add(null);
+        list.add((T) new Circle());
+        list.add((T) new Circle());
+        list.add((T) new Circle());
+        list.add((T) new Circle());
+        //list.add(null);
 
         System.out.println("-------------------");
 
@@ -82,7 +86,10 @@ public class Main {
         listOfFigures.add(figure1);
         listOfFigures.add(figure2);
 
+        System.out.println("print: ");
         Editor.print(listOfFigures);
+        System.out.println("print2: ");
+        Editor.print2(listOfFigures);
 
         Float[] fl = new Float[50];
         Integer[] in = new Integer[50];
