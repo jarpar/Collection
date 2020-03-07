@@ -10,7 +10,7 @@ class Editor {
             System.out.println(f.getName());
         }
 
-        list.add(null);
+        //list.add(null);
 
         System.out.println("-------------------");
 
@@ -32,7 +32,7 @@ class Editor {
         list.add((T) new Circle());
         list.add((T) new Circle());
         list.add((T) new Circle());
-        //list.add(null);
+        list.add(null);
 
         System.out.println("-------------------");
 
@@ -88,6 +88,7 @@ public class Main {
 
         System.out.println("print: ");
         Editor.print(listOfFigures);
+        System.out.println("########################");
         System.out.println("print2: ");
         Editor.print2(listOfFigures);
 
