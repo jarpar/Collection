@@ -23,12 +23,17 @@ class Editor {
         }
     }
 
-    public static void MoveTableToCollection(Object[] tab, Collection<?> c) {
-
+    public static <Type> void MoveTableToCollection(Object[] tab, Collection<?> c) {
+        for (Object o : tab) {
+            c.add(o);
+        }
     }
 }
 
-class Figure {
+class Figure<K> {
+
+    K valTypeK;
+
     public String getName() {
         return name;
     }
