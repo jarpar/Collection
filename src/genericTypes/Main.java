@@ -13,19 +13,19 @@ public class Main {
         }
         */
 
-        AnotherClass<String> somethingName;
-        somethingName.retVal("test2");
+        AnotherClass<String> somethingName = new AnotherClass<>();
+        somethingName.setVal("test2");
 
         System.out.println(somethingName);
     }
 }
 
 class AnotherClass<TYPE> {
-    public void retVal(TYPE val) {
+    public void setVal(TYPE val) {
         this.newVal = val;
     }
 
-    public TYPE ret() {
+    public TYPE getVal() {
         return this.newVal;
     }
 
