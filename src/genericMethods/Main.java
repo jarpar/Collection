@@ -17,6 +17,18 @@ class Figure {
 
 }
 
+class Circle extends Figure {
+    public Circle() {
+        super.name = "I'm a Circle";
+    }
+}
+
+class Square extends Figure {
+    public Square() {
+        super.name = "I'm a Square";
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
 
