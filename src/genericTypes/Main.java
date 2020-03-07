@@ -16,7 +16,7 @@ public class Main {
         AnotherClass<String> somethingName = new AnotherClass<>();
         somethingName.setVal("test2");
 
-        System.out.println(somethingName);
+        System.out.println(somethingName.getVal());
     }
 }
 
