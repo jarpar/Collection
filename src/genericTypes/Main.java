@@ -25,14 +25,14 @@ public class Main {
 
         }
 
-        AnotherClass<String> somethingName = new AnotherClass<>();
+        TypeClass<String> somethingName = new TypeClass<>();
         somethingName.setVal("test6");
 
         System.out.println(somethingName.getVal());
     }
 }
 
-class AnotherClass<TYPE> {
+class TypeClass<TYPE> {
     public void setVal(TYPE val) {
         this.newVal = val;
     }
