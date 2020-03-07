@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class SuperClass {
-    public static void test(List<Object> list) {
+    public static void test(List<?> list) {
 
     }
 }
@@ -25,7 +25,12 @@ public class Main {
         SuperClass.test(listOfStrings);
         SuperClass.test(listOfClass);
 
-        ArrayList<String> listS = new ArrayList<String>();
+        //wrong example:
+/*        ArrayList<String> listS = new ArrayList<String>();
         ArrayList<Object> listO = new ArrayList<Object>();
+
+        listO.add(new Integer(7));
+        String a = listO.get(0);
+*/
     }
 }
