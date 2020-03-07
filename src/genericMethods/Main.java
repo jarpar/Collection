@@ -23,8 +23,8 @@ class Editor {
         }
     }
 
-    public static <Type> void MoveTableToCollection(Object[] tab, Collection<?> c) {
-        for (Object o : tab) {
+    public static <Type> void MoveTableToCollection(Type[] tab, Collection<Type> c) {
+        for (Type o : tab) {
             c.add(o);
         }
     }
