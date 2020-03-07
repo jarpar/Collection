@@ -18,8 +18,10 @@ public class Main {
 
         List<String> listOfStrings = new ArrayList<String>();
 
-        List<SuperClass> listOfClass = new ArrayList<SuperClass>();
-        listOfClass.add(new SuperClass());
+        //List<SuperClass> listOfClass = new ArrayList<SuperClass>();
+        List<SubClass> listOfClass = new ArrayList<SubClass>();
+
+        //listOfClass.add(new SuperClass());
         listOfClass.add(new SubClass());
 
         //SuperClass.test(listOfStrings);
