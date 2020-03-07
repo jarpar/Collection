@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Editor {
-    public static void print(List<?> list) {
-
+    public static void print(List<? extends Figure> list) {
+        for (Figure f : list) {
+            System.out.println(f.getName());
+        }
     }
 }
 
