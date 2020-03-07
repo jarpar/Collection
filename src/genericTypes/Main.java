@@ -8,7 +8,11 @@ public class Main {
         ArrayList<String> a = new ArrayList();
 //        ArrayList<Integer> a = new ArrayList();
 
-        a.add(new String("test"));
+        a.add(new String("test1"));
+        a.add(new String("test2"));
+        a.add(new String("test3"));
+        a.add(new String("test4"));
+        a.add(new String("test5"));
         //a.add(new Integer(7));
 
 //        for (int i = 0; i < a.size(); i++) {
@@ -22,7 +26,7 @@ public class Main {
         }
 
         AnotherClass<String> somethingName = new AnotherClass<>();
-        somethingName.setVal("test2");
+        somethingName.setVal("test6");
 
         System.out.println(somethingName.getVal());
     }
