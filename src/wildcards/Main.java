@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class SuperClass {
-    public static void test(List<? extends SuperClass> list) {
+    public static void test(List<? extends SuperClass> list) { // ? - wildcard
 
     }
 }
