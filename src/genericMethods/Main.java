@@ -8,6 +8,15 @@ class editor {
     }
 }
 
+class Figure {
+    public String getName() {
+        return name;
+    }
+
+    String name = "";
+
+}
+
 public class Main {
     public static void main(String[] args) {
 
