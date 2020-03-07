@@ -8,6 +8,18 @@ class Editor {
         for (Figure f : list) {
             System.out.println(f.getName());
         }
+
+        list.add(null);
+
+        System.out.println("-------------------");
+
+        for (Figure f : list) {
+            if (f == null) {
+                System.out.println("null");
+                break;
+            }
+            System.out.println(f.getName());
+        }
     }
 }
 
