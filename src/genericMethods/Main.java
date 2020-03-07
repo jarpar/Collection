@@ -1,6 +1,7 @@
 package genericMethods;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 class Editor {
@@ -20,6 +21,10 @@ class Editor {
             }
             System.out.println(f.getName());
         }
+    }
+
+    public static void MoveTableToCollection(Object[] tab, Collection<?> c) {
+
     }
 }
 
